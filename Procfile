@@ -1,1 +1,1 @@
-web: gunicorn blockchain_blog.wsgi
+web: gunicorn django_project.wsgi
