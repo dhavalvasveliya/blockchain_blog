@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
+import django_heroku
 from dotenv import load_dotenv
 load_dotenv(override=True)
 
@@ -152,3 +153,4 @@ AWS_DEFAULT_ACL = None
 
 DEFAULT_FILE_STORAGES = 'storages.backends.s3boto3.S3Boto3Storage'
 
+django_heroku.settings(locals())
